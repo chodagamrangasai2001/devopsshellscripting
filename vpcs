@@ -1,0 +1,118 @@
+{
+ "Vpcs": [
+        {
+            "OwnerId": "423421174106",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-051467ebb610ceecc",
+                    "CidrBlock": "10.1.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "AWS-nw-fw-vpc-vpc"
+                }
+            ],
+            "VpcId": "vpc-033d69c72112b6ad2",
+            "State": "available",
+            "CidrBlock": "10.1.0.0/16",
+            "DhcpOptionsId": "dopt-09febce093ffc55e6"
+        },
+        {
+            "OwnerId": "423421174106",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0023ef59c555ae14d",
+                    "CidrBlock": "10.100.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Rangasai-sifyassignment"
+                }
+            ],
+            "VpcId": "vpc-0f1a3e3fc4886f78d",
+            "State": "available",
+            "CidrBlock": "10.100.0.0/16",
+            "DhcpOptionsId": "dopt-09febce093ffc55e6"
+        },
+        {
+            "OwnerId": "423421174106",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-014108a5a5bd8b804",
+                    "CidrBlock": "10.10.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Rangasai-vpc"
+                }
+            ],
+            "VpcId": "vpc-0b1809ea5eb20a1f0",
+            "State": "available",
+            "CidrBlock": "10.10.0.0/16",
+            "DhcpOptionsId": "dopt-09febce093ffc55e6"
+        },
+        {
+            "OwnerId": "423421174106",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-03cdcd8c545e32571",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true,
+            "VpcId": "vpc-0939db092236fc9a0",
+            "State": "available",
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-09febce093ffc55e6"
+        },
+        {
+            "OwnerId": "423421174106",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-08cbe2dc42ed692ad",
+                    "CidrBlock": "10.0.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "vpc-a-vpc"
+                }
+            ],
+            "VpcId": "vpc-042cafad5c6c2a7ca",
+            "State": "available",
+            "CidrBlock": "10.0.0.0/16",
+            "DhcpOptionsId": "dopt-09febce093ffc55e6"
+        }
+    ]
+}
