@@ -1,6 +1,6 @@
 #!/bin/bash
 systemctl status nginx
-if [$? -eq 0]; then
+if [ $? -eq 0 ]; then
     echo "nginx already running lets validate curl"
     curl -sL http://localhost
 else
