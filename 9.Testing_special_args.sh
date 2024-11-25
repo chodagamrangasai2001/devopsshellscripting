@@ -10,7 +10,7 @@ if [ $# -gt 0 ]; then
         echo "$REGION has a total vpc count of ${VPC_COUNT} Vpcs"
     done
 else
-    REGIONS = $(aws ec2 describe-regions | jq ".REGIONS[].RegionName" -r)
+    REGIONS = $(aws ec2 describe-regions | jq ".Regions[].RegionName" -r)
     echo "No Region arg provided"
     echo $REGIONS
 fi
