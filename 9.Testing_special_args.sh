@@ -1,7 +1,7 @@
 #!/bin/bash
 echo $@
 echo $*
-if [$# -gt 0]; then
+if [ $# -gt 0 ]; then
     echo "you have provided $# Arguments to this script."
     for REGION in $@; do
         echo "Lets get vpc information for $REGION ......."
