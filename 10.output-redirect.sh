@@ -3,7 +3,7 @@ uptime
 superstar
 last reboot | head -3
 megastar
-fee
+free
 powerstar
 df -h
 rebelstar
