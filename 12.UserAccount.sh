@@ -8,8 +8,8 @@ while true; do
     else
         echo "User name $USERNAME is new user"
         useradd -m $USERNAME --shell /bin/bash
-        SPEC = $(echo '!@#$%^&*' | fold -w1 | shuf | head -1)
-        PASSWORD = "India@${RANDOM}${SPEC}"
+        SPEC=$(echo '!@#$%^&*' | fold -w1 | shuf | head -1)
+        PASSWORD="India@${RANDOM}${SPEC}"
         echo "$USERNAME : $PASSWORD" | sudo chpasswd
         passwd -e $USERNAME
         echo " Login with $USERNAME WITH PASSWORD $PASSWORD"
