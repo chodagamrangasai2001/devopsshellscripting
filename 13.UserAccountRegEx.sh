@@ -12,7 +12,7 @@ if [ $# -gt 0 ]; then
                 SPEC_CHAR1=$(echo '!@#$%^&*()' | fold -w1 | shuf | head -1)
                 SPEC_CHAR2=$(echo '!@#$%^&*()' | fold -w1 | shuf | tail -1)
                 PASSWORD="India@${SPEC_CHAR1}${RANDOM}${SPEC_CHAR2}"
-                echo "$USERNAME : $PASSWORD" | sudo chpasswd
+                echo "$USERNAME:$PASSWORD" | sudo chpasswd
                 passwd -e $USERNAME
                 echo "password is $PASSWORD "
                 curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text":
