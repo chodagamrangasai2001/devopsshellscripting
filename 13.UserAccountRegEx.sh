@@ -14,8 +14,9 @@ if [ $# -gt 0 ]; then
                 PASSWORD="India@${SPEC_CHAR1}${RANDOM}${SPEC_CHAR2}"
                 echo "$USERNAME : $PASSWORD" | sudo chpasswd
                 passwd -e $USERNAME
+                echo "password is $PASSWORD "
                 curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text":
-                \"username is : ${USERNAME}\"} >>/dev/null 
+                \"username is : ${USERNAME}\"} >>/dev/null =
                 curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text"\"Temporary password is : ${PASSWORD} reset it . \"} >>/dev/null
 
             fi
