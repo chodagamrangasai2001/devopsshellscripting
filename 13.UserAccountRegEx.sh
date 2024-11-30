@@ -16,7 +16,7 @@ if [ $# -gt 0 ]; then
                 passwd -e $USERNAME
                 echo "password is $PASSWORD"
                 curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text": \"username is : ${USERNAME}\"}"
-                curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text"\"Temporary password is : ${PASSWORD} reset it . \"}"
+                curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text": \"Temporary password is : ${PASSWORD} reset it . \"}"
 
             fi
         else
