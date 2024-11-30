@@ -27,7 +27,3 @@ else
     echo "Please provide the username to create the user"
 fi
 
-##
-#curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text":\"username is : ${USERNAME}\"} >>/dev/null
-
-#curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data '{"text": "username is : ${USERNAME}"}' >> /dev/null
