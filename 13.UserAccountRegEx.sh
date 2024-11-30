@@ -16,11 +16,11 @@ if [ $# -gt 0 ]; then
                 passwd -e $USERNAME
                 echo "password is $PASSWORD"
                 curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data '{"text": "username is : ${USERNAME}"}'
-                curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data "{"text"\"Temporary password is : ${PASSWORD} reset it . "}'
+                curl -X POST ${SLACK_WEB} -sL -H 'content-type:application/json' --data '{"text"\"Temporary password is : ${PASSWORD} reset it . "}'
 
             fi
         else
-            echo "The username ${USERNAME} does not match with regex pattern. Please provide the username in format of 'abc123' "
+            echo  "The username ${USERNAME} does not match with regex pattern. Please provide the username in format of 'abc123' "
         fi
     done
 else
