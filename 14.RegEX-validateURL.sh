@@ -1,5 +1,5 @@
 #!/bin/bash
-DATA=$(cat applist.log)
+DATA=$(cat applist.org)
 echo $DATA
 for URL in $DATA; do
     if [[ "$URL" =~ ^https?://([^/]+) ]]; then
