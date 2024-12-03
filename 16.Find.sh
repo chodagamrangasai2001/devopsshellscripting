@@ -1,7 +1,7 @@
 #!/bin/bash
 for FILE in $(find / -name awscliv2.zip); do
     echo $FILE
-    if [ls /tmp/demo = false]; then
+    if [ ls /tmp/demo = false ]; then
         mkdir -p /tmp/demo/
     fi
     cp $FILE /tmp/demo/
