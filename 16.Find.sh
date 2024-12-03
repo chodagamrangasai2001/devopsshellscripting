@@ -1,8 +1,8 @@
 #!/bin/bash
 for FILE in $(find / -name awscliv2.zip); do
     echo $FILE
-    cp $FILE /ranga
-    mv /ranga/awscliv2.zip /ranga/awscliv2-${RANDOM}.zip
+    cp $FILE /tmp/demo
+    mv /tmp/demo/awscliv2.zip /tmp/demo/awscliv2-${RANDOM}.zip
 done
 ##############
 #!/bin/bash
