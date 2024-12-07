@@ -21,5 +21,5 @@ for REGION in ${REGIONS[@]}; do
     delete_ebs_vols $REGION
 done
 
-# * * * * * sudo bash /root/unttached_ebs.sh us-east-1
+* * * * * sudo bash /root/unttached_ebs.sh us-east-1
 #Cron might be running but Cron cannot use credetials as env varables. Configure using aws configure.
