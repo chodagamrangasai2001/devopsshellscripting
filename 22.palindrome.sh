@@ -8,3 +8,8 @@ for ((I = $STRING_LENGTH; I >= 0; I--)); do
     echo ${INPUT[@]:$I:1}
     REVERSE=${REVERSE}${INPUT[@]:$I:1}
 done
+if [ "${INPUT}" = "${REVERSE}" ]; then
+    echo "$INPUT is a palindrome"
+else
+    echo "$INPUT is not a palindrome"
+fi
